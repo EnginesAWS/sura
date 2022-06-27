@@ -5,11 +5,9 @@
 		"explanation": "Define the container service for Managed Functions Sura"
 	},
 	"compute_service": {
-		"default": {
-			"identifier": "container_service"
-		}
+		"identifier": "container_service"
 	},
-	"resources": {
+	"dimensions": {
 		"cpus": 10,
 		"memory": 256
 	},
