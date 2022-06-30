@@ -13,8 +13,8 @@
 	},
 	"ports": [
 		{
-			"container_port": 443,
-			"host_port": 443
+			"container_port": 80,
+			"host_port": 81
 		}
 	],
 	"binding_target": {
