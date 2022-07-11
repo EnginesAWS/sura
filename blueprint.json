@@ -22,5 +22,19 @@
 			"desired_count": 3,
 			"essential": true
  		}
-	}
+	},
+	"resources": [		
+		{
+			"type": "load_balancer_target_group",
+			"configuration": {
+			"identifier" : "sura-tg"
+			}
+		},{
+			"type": "subnet",
+			"identifier": "subnet_sura",
+			"configuration": {
+				"cidr_block": "10.111.20.0/24"
+			}
+		}
+	]
 }
