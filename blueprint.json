@@ -27,7 +27,8 @@
 		{
 			"type": "load_balancer_target_group",
 			"configuration": {
-			"identifier" : "sura-tg"
+			"identifier" : "sura-tg",
+			"port": 81
 			}
 		},{
 			"type": "subnet",
