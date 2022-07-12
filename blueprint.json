@@ -26,8 +26,8 @@
 	"resources": [		
 		{
 			"type": "load_balancer_target_group",
-			"configuration": {
 			"identifier" : "sura-tg",
+			"configuration": {
 			"port": 81
 			}
 		},{
