@@ -28,6 +28,7 @@
 			"type": "load_balancer_target_group",
 			"identifier" : "sura-tg",
 			"configuration": {
+			"vpc_binding" : "vpc",
 			"port": 81
 			}
 		},{
