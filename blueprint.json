@@ -23,17 +23,38 @@
 			"essential": true
  		}
 	},
-	"resources": [		
+	"resources": [
+		{
+			"type": "container_task_definition",
+			"identifier": "sura"
+		},
+		{
+			"type": "load_balancer",
+			"identifier": "sura",
+			"configuration": {
+				"subnets": [
+					"subnet_a",
+			    		"subnet_b"
+				],
+				"security_groups": [
+					"security_group"
+				]
+			}
+		},
 		{
 			"type": "load_balancer_target_group",
-			"identifier" : "sura-tg",
+			"identifier": "sura",
 			"configuration": {
-			"vpc_binding" : "vpc",
-			"port": 81
+				"port": 81
 			}
-		},{
+		},
+		{
+			"type": "load_balancer_listener",
+			"identifier": "sura"
+		},
+		{
 			"type": "subnet",
-			"identifier": "subnet_sura",
+			"identifier": "sura",
 			"configuration": {
 				"cidr_block": "10.111.20.0/24"
 			}
