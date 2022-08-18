@@ -4,54 +4,21 @@
 		"title": "Managed Functions Sura",
 		"explanation": "Define the container service for Managed Functions Sura"
 	},
-	"compute_service": {
-		"identifier": "container_service"
-	},
-	"dimensions": {
-		"cpus": 10,
-		"memory": 256
-	},
+	"bindings": [
+		{
+			"type": "embed",
+			"target": {
+				"repository": "https://github.com/EnginesAWS/container-service-infrastructure"
+			}
+		}
+	],
 	"ports": [
 		{
 			"container_port": 81,
 			"host_port": 81
 		}
 	],
-	"binding_target": {
-		"configuration": {
-			"desired_count": 3,
-			"essential": true
- 		}
-	},
 	"resources": [
-		{
-			"type": "container_task_definition",
-			"identifier": "sura"
-		},
-		{
-			"type": "load_balancer",
-			"identifier": "sura",
-			"configuration": {
-				"subnets": [
-					"subnet_a",
-			    		"subnet_b"
-				],
-				"security_groups": [
-					"security_group"
-				]
-			}
-		},
-		{
-			"type": "load_balancer_target_group",
-			"identifier": "sura",
-			"configuration": {
-				"port": 81
-			}
-		},
-		{
-			"type": "load_balancer_listener",
-			"identifier": "sura"
-		},
 		{
 			"type": "subnet",
 			"identifier": "sura",
