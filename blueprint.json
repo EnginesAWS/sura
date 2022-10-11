@@ -17,14 +17,5 @@
 			"container_port": 81,
 			"host_port": 81
 		}
-	],
-	"resources": [
-		{
-			"type": "subnet",
-			"identifier": "sura",
-			"configuration": {
-				"cidr_block": "10.111.20.0/24"
-			}
-		}
 	]
 }
