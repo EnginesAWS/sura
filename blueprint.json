@@ -21,9 +21,16 @@
 	"resources": [
 		{
 			"type": "subnet",
-			"identifier": "sura",
+			"identifier": "^^blueprint_identifier^^_a",
 			"configuration": {
-				"cidr_block": "10.111.20.0/24"
+				"cidr_block": "10.111.81.0/24"
+			}
+		},
+		{
+			"type": "subnet",
+			"identifier": "^^blueprint_identifier^^_b",
+			"configuration": {
+				"cidr_block": "10.111.181.0/24"
 			}
 		}
 	]
