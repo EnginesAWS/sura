@@ -8,6 +8,12 @@
 		{
 			"type": "embed",
 			"target": {
+				"repository": "https://github.com/EnginesAWS/managed-function"
+			}
+		},
+		{
+			"type": "embed",
+			"target": {
 				"repository": "https://github.com/EnginesAWS/container-service-infrastructure"
 			}
 		}
